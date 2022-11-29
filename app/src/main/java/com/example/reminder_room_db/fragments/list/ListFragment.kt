@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.room_db_demo.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /*
 // TODO: Rename parameter arguments, choose names that match
@@ -21,6 +22,10 @@ private const val ARG_PARAM2 = "param2"
  */
 
 class ListFragment : Fragment() {
+
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
     /*
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -42,8 +47,16 @@ class ListFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_list, container, false)
 
+        /*
+        @Override
+public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    ImageView imageView = (ImageView) getView().findViewById(R.id.foo);
+    // or  (ImageView) view.findViewById(R.id.foo);
+         */
+
         // error
-        view.floatingActionButton_add_reminder
+        //view
+        //floatingActionButton_add_reminder
         //findViewById<>()
 
         return view
